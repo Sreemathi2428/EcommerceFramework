@@ -9,7 +9,7 @@ class LoginPage{
       }
       
       async Logintosaucedemo(url,username,passwrod){
-        await this.page.goto(url)
+               await this.page.goto(url)
                await this.username.fill(username)
                await this.password.fill(passwrod)
                await this.loginbtn.click()
