@@ -1,8 +1,7 @@
 import {test} from "@playwright/test"
 import LoginPage from "../POM/LoginPage"
-import path from 'path'
 import fs from 'fs'
-let userdata = fs.readFileSync(path.join(process.cwd(), 'Test_Data', 'Login.json'), 'utf-8')
+let userdata = fs.readFileSync("C:/Users/Hp/OneDrive/Desktop/Saucedemo/EcommerceFramework/Test_Data/Login.json")
 userdata = JSON.parse(userdata)
 let url=userdata.url
 let username=userdata.username
